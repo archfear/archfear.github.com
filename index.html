@@ -1,9 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-  <head>
-    <title>Dan Dofter</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
-</html>
+---
+layout: default
+title: Dan Dofter
+type: blog
+---
+<ul>
+{% for post in site.posts %}
+  {% if post != site.posts.last %}
+  <li class="post">
+  {% else %}
+  <li class="post last">
+  {% endif %}
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p class="meta">{{ post.date | date_to_string }}</p>
+    {{ post.content }}
+  </li>
+{% endfor %}
+</ul>

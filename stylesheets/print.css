@@ -1,0 +1,47 @@
+---
+extension: css
+filter:    erb
+layout:    nil   # no layout
+---
+#header {
+  padding-right:0;
+  padding-left:0;
+  width:630px;
+}
+#content {
+  padding-left:0;
+  padding-right:0;
+  width:630px;
+}
+#footer {
+  padding-left:0;
+  padding-right:0;
+  width:630px;
+}
+.container {
+  width:630px;
+}
+#header #masthead{
+  padding-bottom:1em;
+}
+#header #masthead #navigation {
+  display:none;
+}
+#header h1 { 
+  margin-bottom:0;
+}
+#sidebar {
+  display:none;
+}
+#footer {
+  display:none;
+}
+#resume .pdf {
+  display:none;
+}
+#resume #contact h2 a {
+  display:none;
+}
+#resume #skills div {
+  width:315px;
+}
