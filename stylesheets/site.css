@@ -1,8 +1,3 @@
----
-extension: css
-filter:    erb
-layout:    nil   # no layout
----
 html {
   -webkit-text-size-adjust:none;
 }
