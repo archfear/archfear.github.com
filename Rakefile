@@ -11,11 +11,14 @@ end
 
 desc "Generates PDF resume from HTML"
 task :build_pdf do
-  `jekyll`
-  `~/sandbox/wkpdf/bin/wkpdf --source _site/resume.html --output dandofter.pdf --stylesheet-media print --margin 30`
+  system 'jekyll --server &'
+  jekyll_pid = `ps | grep jekyll`.match(/^(\d+)/)[1]
+  `~/sandbox/wkpdf/bin/wkpdf --source http://localhost:4000/resume.html --output dandofter.pdf --stylesheet-media print --margin 30`
+  `kill #{jekyll_pid}`
 end
 
-desc "Generates 404 page since github pages requires an non-jekyll 404.html"
+desc "Generates 404 page since github pages requires
+ an non-jekyll 404.html"
 task :build_404 do
   FileUtils.cp '_404.html', '404.html'
   `jekyll`
