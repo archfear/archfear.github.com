@@ -31,29 +31,27 @@ abbr, acronym {
 }
 
 /* header */
-#header {
-  margin-bottom: 0.5em;
-}
 #header #masthead{
   border-bottom:3px double #DDDDDD;
 }
-#header h1 { 
-  margin-bottom: .5em;
+#header #masthead #title {
+  line-height:54px;
 }
 #header #masthead #title a {
   text-decoration:none;
   color: #000;
 }
 #header #masthead #navigation {
-  float:right;
   font-weight: bold;
-  padding-top:2.5em;
 }
 #header #masthead #navigation li {
   float:left;
 }
 #header #masthead #navigation li a {
   padding:.5em 1em;
+}
+#header #masthead #navigation li:last a {
+  padding:0;
 }
 #header #masthead #navigation li a:hover {
   background:#125AA7 none repeat scroll 0 0;
@@ -313,5 +311,3 @@ li.post.last {
 #cse-search-results {
   margin-top:.5em;
 }
-
-/* EOF */
