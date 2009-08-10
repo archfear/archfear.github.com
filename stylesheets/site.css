@@ -164,7 +164,7 @@ li.post.last {
   text-align:right;
   background-repeat: no-repeat;
   background-position: left center;
-  background-image: url(../images/pdf.png);
+  background-image: url(/images/pdf.png);
   border:1px solid #DDDDDD;
   font-weight:bold;
   -moz-border-radius: 3px;
