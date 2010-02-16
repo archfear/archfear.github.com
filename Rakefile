@@ -1,5 +1,5 @@
 require 'rake'
-require File.join(File.dirname(__FILE__), "_vendor", "blueprint-css", "lib", "blueprint", "blueprint")
+# require File.join(File.dirname(__FILE__), "_vendor", "blueprint-css", "lib", "blueprint", "blueprint")
 
 desc "Generates and compresses stylesheets from Blueprint CSS source"
 task :build_css do
