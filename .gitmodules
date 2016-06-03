@@ -1,6 +1,0 @@
-[submodule "_vendor/wkpdf"]
-	path = _vendor/wkpdf
-	url = git://github.com/plessl/wkpdf.git
-[submodule "_vendor/blueprint-css"]
-	path = _vendor/blueprint-css
-	url = git://github.com/joshuaclayton/blueprint-css.git
